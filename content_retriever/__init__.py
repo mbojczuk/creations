@@ -5,4 +5,6 @@ from .documents.user_document import UserDocument
 from .documents.repository_document import RepositoryDocument
 from .documents.document_class import DocumentBase
 
-__all__ = ["UserDocument", "RepositoryDocument", "DocumentBase"]
+from .web_crawlers.github_crawler import GithubCrawler
+
+__all__ = ["UserDocument", "RepositoryDocument", "DocumentBase", "GithubCrawler"]
